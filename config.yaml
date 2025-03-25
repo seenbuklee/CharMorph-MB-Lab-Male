@@ -19,8 +19,8 @@ hairstyles: []
 
 armature_defaults:
     type: rigify
-    bones: ../../mb_bones.yaml
-    file: ../../shared_lib.blend
+    bones: ./shared_lib/mb_bones.yaml
+    file: ./shared_lib/shared_lib.blend
     obj_name: metarig
     joints: joints/regular.npz
 
@@ -29,9 +29,9 @@ armature:
         title: Tweaked
         weights: weights/tweaked.npz
         tweaks:
-            - ../../tweaks/rigify_default.yaml
-            - tweaks/eyes.yaml
-            - tweaks/tweaked.yaml
+            - ./shared_lib/tweaks/rigify_default.yaml
+            - ./tweaks/eyes.yaml
+            - ./tweaks/tweaked.yaml
     muscles:
         title: Basic muscles
         mixin: muscles
@@ -40,14 +40,14 @@ armature:
                 axis_z: keep
         joints: joints/muscles.npz
         tweaks:
-            - ../../tweaks/rigify_default.yaml
-            - ../../tweaks/muscles.yaml
+            - ./shared_lib/tweaks/rigify_default.yaml
+            - ./shared_lib/tweaks/muscles.yaml
     original:
         title: Original
         tweaks:
-            - ../../tweaks/rigify_default.yaml
-            - tweaks/eyes.yaml
-            - ../../tweaks/spine_nobendy.yaml
+            - ./shared_lib/tweaks/rigify_default.yaml
+            - ./tweaks/eyes.yaml
+            - ./shared_lib/tweaks/spine_nobendy.yaml
     gaming:
         title: Gaming
         type: regular
